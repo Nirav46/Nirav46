@@ -1,0 +1,20 @@
+<table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Website Id</th>
+        <th scope="col">Dates</th>
+        <th scope="col">Chats</th>
+        <th scope="col">Missed Chats</th>
+        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let chats of ChatList">
+        <td>{{chats.websiteId}}</td>
+        <td>{{chats.date}}</td>
+        <td>{{chats.chats}}</td>
+        <td>{{chats.missedChats}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
